@@ -31,6 +31,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  local_auth: ^0.6.1 #ESTO TAMBIEN
     
 
 
@@ -38,6 +40,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   curved_navigation_bar: ^1.0.3
+  google_fonts:
 
 dev_dependencies:
   flutter_test:

@@ -7,6 +7,8 @@ import 'package:auth_ui/feature/register/presentation/register_screen.dart';
 import 'package:auth_ui/pages/home_page.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart'; 
+import 'package:local_auth/local_auth.dart'; //ESTO FUE LO QUE AÑADÍ Y NO DA :C
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -33,7 +35,10 @@ class LoginScreen extends StatelessWidget {
             ),
             Text(
               "Iniciar Sesión",
-              style: Theme.of(context).textTheme.headlineMedium,
+              style: GoogleFonts.notoSansTamil(
+                 fontWeight: FontWeight.bold,
+                 fontSize: 25,
+              )
             ),
             SizedBox(
               child: Container(
@@ -68,7 +73,14 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                child: const Text("Iniciar"),
+                child: Text(
+                "Iniciar",
+              style: GoogleFonts.notoSansTamil(
+                 fontSize: 15,
+                 fontWeight: FontWeight.bold,
+                 color: Colors.white,
+              )
+            ),
               ),
             ),
             Row(
@@ -112,7 +124,12 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                child: const Text("¡Registrarse ahora!"),
+                child: Text("¡Registrarse Ahora!",
+              style: GoogleFonts.notoSansTamil(
+                 fontSize: 15,
+                 fontWeight: FontWeight.bold,
+                 color: Colors.white,
+              )),
               ),
             ),
           ],

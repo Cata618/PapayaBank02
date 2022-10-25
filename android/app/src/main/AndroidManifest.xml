@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.auth_ui">
+   <uses-permission android:name="android.permission.USE_FINGERPRINT"/> <!-- ESTO TAMBIEN LO AGREGUÉ -->
    <application
         android:label="auth_ui"
         android:name="${applicationName}"

@@ -35,12 +35,16 @@ class RegisterScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // ignore: prefer_const_constructors
+            SizedBox(height: 10),
             Image(
               width: MediaQuery.of(context).size.width,
-              height: 250,
+              height: 170,
               fit: BoxFit.contain,
-              image: const AssetImage("assets/img_register.png"),
+              image: const AssetImage("assets/registro.png"),
             ),
+            // ignore: prefer_const_constructors
+            
             Text(
               "Registro",
               style: Theme.of(context).textTheme.headlineMedium,
